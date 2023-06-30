@@ -24,7 +24,8 @@ GROUP BY S.city_id;
 
 <img src="img/select_1.png" width="200" hight="300">
 
-<br>
+
+
 در این پرسمان می خواهیم ببینیم هر یک از کاربر ها از کدام شهر ،استان و کشور زندگی می کنند که هر یک از جداول کاربر، ادرس، شهر، استان و کشور را با هم join می دهیم
 
 ```sql
@@ -38,16 +39,16 @@ INNER JOIN countries AS K ON k.id = P.country;
 
 <img src="img/select_2.png" width="400" hight="300">
 
-<br>
+
 با استفاده از پرسمان زیر می توانیم اسکوتر های که خراب شده و غیر قابل تعمیر هستند را پیدا کنیم
 
 ```sql
-SELECT delivered_item_id,delivered_location_id FROM return_and_upkeep WHERE item_condition = "irreparable"
+SELECT delivered_item_id,delivered_location_id FROM return_and_upkeep WHERE item_condition = "irreparable";
 ```
 
 <img src="img/select_3.png" width="300" hight="100">
 
-<br>
+
 
 با پرسمان زیر میتوانی تعداد کاربرانی را پیدا کنیم که در تاریخ های مشخص اسکوتر اجاره کرده اند
 
@@ -61,7 +62,7 @@ WHERE contract_start_date BETWEEN "2023-03-20" AND "2023-06-20";
 
 <img src="img/select_4.png">
 
-<br>
+
 
 این پرسمان نیز همانند بالا است ولی تعداد کاربرانی را به دست می آوریم که در در طی یک تاریخ بیش از 5 اسکوتر اجاره کرده اند
 
